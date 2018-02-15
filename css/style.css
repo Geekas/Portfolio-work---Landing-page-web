@@ -1,30 +1,58 @@
 body {
     position: relative;
+    display: table;
 }
+
+section {
+    height: 100vh;
+    width: 100vw;    
+}
+
 section#about {
-    height: 100vh;
-    width: 100vw;
-    background: url(../images/about.jpeg) no-repeat;   
-    background-size: 100% 100%;  
+    background: url(../images/about.jpeg) no-repeat;
+    background-size: 100% 100%;
 }
-section#travel {
-    height: 100vh;
-    width: 100vw;
-    background: url(../images/travel.jpg) no-repeat;   
-    background-size: 100% 100%;  
+
+section#travel {   
+    background: url(../images/travel.jpg) no-repeat; 
+    background-size: 100% 100%;
 }
-section#contact {
-    height: 100vh;
-    width: 100vw;
+
+section#contact {  
+    display: table; 
     background: url(../images/contact.jpeg) no-repeat;   
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
+    padding-top: 50px;
 }
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
     color: #a38063;
 }
-nav a:hover{
+
+nav a:hover {
     color: #cc5100 !important;
 }
+
+nav li a:hover {
+    color: #cc5100 !important;
+    text-decoration: underline !important;
+}
+
 .navbar-inverse .navbar-nav>.active>a {
     color: #da9812;
 }
+.btn-submit {
+    border-radius: 50%;
+    background-color: rgb(96, 170, 231);
+    color: white;
+}
+.panel, .panel-heading {
+    background: #efefef !important;
+}
+.v-center {
+    display: table-cell;
+    vertical-align: middle;
+ }
+ .header {
+     font-size: 25px;
+ }
