@@ -20,11 +20,11 @@ section#contact {
     background-size: 100% 100%;  
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
-    color: rgb(206, 171, 16);
+    color: #a38063;
 }
 nav a:hover{
-    color: yellow !important;
+    color: #cc5100 !important;
 }
 .navbar-inverse .navbar-nav>.active>a {
-    color: tomato;
+    color: #da9812;
 }
