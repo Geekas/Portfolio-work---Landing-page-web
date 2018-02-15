@@ -1,0 +1,30 @@
+body {
+    position: relative;
+}
+section#about {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/about.jpeg) no-repeat;   
+    background-size: 100% 100%;  
+}
+section#travel {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/travel.jpg) no-repeat;   
+    background-size: 100% 100%;  
+}
+section#contact {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/contact.jpeg) no-repeat;   
+    background-size: 100% 100%;  
+}
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
+    color: rgb(206, 171, 16);
+}
+nav a:hover{
+    color: yellow !important;
+}
+.navbar-inverse .navbar-nav>.active>a {
+    color: tomato;
+}
