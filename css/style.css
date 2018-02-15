@@ -5,7 +5,9 @@ body {
 
 section {
     height: 100vh;
-    width: 100vw;    
+    width: 100vw;
+    display: table;
+    padding-top: 50px;
 }
 
 section#about {
@@ -13,16 +15,14 @@ section#about {
     background-size: 100% 100%;
 }
 
-section#travel {   
-    background: url(../images/travel.jpg) no-repeat; 
+section#travel {
+    background: url(../images/travel.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
-section#contact {  
-    display: table; 
-    background: url(../images/contact.jpeg) no-repeat;   
+section#contact {
+    background: url(../images/contact.jpeg) no-repeat;
     background-size: 100% 100%;
-    padding-top: 50px;
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
@@ -41,18 +41,40 @@ nav li a:hover {
 .navbar-inverse .navbar-nav>.active>a {
     color: #da9812;
 }
+
 .btn-submit {
     border-radius: 50%;
     background-color: rgb(96, 170, 231);
     color: white;
 }
+
 .panel, .panel-heading {
     background: #efefef !important;
 }
+
 .v-center {
     display: table-cell;
     vertical-align: middle;
- }
- .header {
-     font-size: 25px;
- }
+}
+.v-top {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 100px;
+}
+
+.header {
+    font-size: 25px;
+}
+
+#footer-container {
+    display: table;
+    width: 100%;
+}
+
+#footer {
+    color: #a38063;
+}
+#travel-line {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+}
