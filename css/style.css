@@ -95,3 +95,9 @@ nav li a:hover {
 .content-colors {
     color: rgb(235, 193, 54);
 }
+.error-field{
+    color:red;
+}
+.margin-bot{
+    margin-bottom: 0 !important;
+}
