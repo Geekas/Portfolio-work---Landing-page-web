@@ -1,1 +1,2 @@
 Example Landing page project for travel site as representive
+The main thingsto look are:  Scroll spy, on travel page some hidden element show up after pressing on picture. My main beauty and what im proud on this page is contact form. Created nice validation and added some nice animation when form is filled correctly and pressed SEND :)

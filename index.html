@@ -15,6 +15,7 @@
         $(document).ready(function () {
             badget();
             validateFields();
+            launchForm();
         });
     </script>
 </head>
@@ -178,7 +179,7 @@
     </section>
     <section id="contact">
         <div id="contactForm" class="row container v-center">
-            <div class="panel panel-default col-md-offset-2 col-md-4">
+            <div class="panel panel-default col-md-offset-2 col-md-4 email">
                 <div class="panel-heading">
                     <p class="panel-title">
                         <p class="text-center header">
@@ -216,7 +217,7 @@
                     </p>
                 </div>
                 <div class="panel-body">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" id="contact-form">
                         <div>
                             <div class="form-group">
                                 <label class="control-label col-md-2 col-xs-6" for="inputName">Name:</label>
@@ -264,7 +265,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-4 col-md-4">
-                                <button type="submit" class="btn btn-submit">Submit</button>
+                                <button type="submit" class="btn btn-submit send">Submit</button>
                             </div>
                         </div>
                     </form>
