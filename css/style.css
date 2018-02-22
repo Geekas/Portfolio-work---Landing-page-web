@@ -15,6 +15,11 @@ section#about {
     background: url(../images/about.jpeg) no-repeat;
     background-size: 100% 100%;
 }
+section#skills {
+    background: url(../images/skills.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
 
 section#travel {
     background: url(../images/travel.jpg) no-repeat;
@@ -111,7 +116,6 @@ nav li a:hover {
 }
 
 .email {
-    
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 }
@@ -132,6 +136,37 @@ nav li a:hover {
     -webkit-animation: launch 1.5s ease-in-out;
     animation: launch 1.5s ease-in-out;
 }
+
+.text-content {
+    position: relative;
+    background: rgb(187, 114, 19);
+    height: 200px;
+    border-radius: 20px;
+    padding: 1.4rem;
+    opacity: 0.7;
+    color: white;
+    font-size: 16px;    
+    font-family: "Times New Roman", Times, serif;
+}
+.highlight {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -8px;
+    right: 50px;
+    background: rgb(190, 247, 35);
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+    0%, 70%{
+        box-shadow:0px 0px 0px 0px rgba(39, 189, 59, 0.527);
+    }
+    100%{
+        box-shadow:0px 0px 0px 50px rgba(39, 189, 59, 0);
+    }
+}
+
 
 @-webkit-keyframes launch {
     0% {
@@ -163,6 +198,40 @@ nav li a:hover {
     100% {
         opacity: 1;
         -webkit-transform: translateY(0px) scale(1);
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@-moz-keyframes launch {
+    0% {
+        opacity: 1;
+        -moz-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+    10%, 15% {
+        -moz-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    40%, 70% {
+        -moz-transform: translateY(-1000px) scale(1);
+        transform: translateY(-1000px) scale(1);
+    }
+    70% {
+        opacity: 1;
+    }
+    71% {
+        opacity: 0;
+        -moz-transform: translateY(-1000px) scale(0.3);
+        transform: translateY(-1000px) scale(0.3);
+    }
+    72% {
+        opacity: 0;
+        -moz-transform: translateY(0px) scale(0.3);
+        transform: translateY(0px) scale(0.3);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0px) scale(1);
         transform: translateY(0px) scale(1);
     }
 }
